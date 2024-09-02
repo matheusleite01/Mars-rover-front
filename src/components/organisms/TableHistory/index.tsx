@@ -20,11 +20,15 @@ const TableHistory = () => {
   ];
 
   return (
-    <div className="w-full relative">
-      <h3 className="flex gap-1 absolute -top-[5%] right-[50%] font-Plus font-bold max-xl:-top-[15%] max-xl:right-[45%]">
+    <div className="w-full relative max-xl:mb-8">
+      <h3 className="flex gap-1 absolute -top-[5%] right-[50%] font-Plus font-bold max-xl:-top-[8%] max-xl:right-[45%]">
         History <span className="bg-gradient-custom rounded-md px-1">Logs</span>
       </h3>
-      <Table headerTable={header} loading={isLoading} data={data ? data?.data : [] } />
+      <Table
+        headerTable={header}
+        loading={isLoading}
+        data={data ? data?.data : []}
+      />
     </div>
   );
 };

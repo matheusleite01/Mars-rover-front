@@ -12,7 +12,7 @@ A Mars Rover é uma aplicação desenvolvida para simular a movimentação de ro
 
 ### Design
 
-- Design do projeto disponível no Figma: [Mars rover](https://www.figma.com/proto/igyPaBXlsQqhxID62yC5Di/Mars-Rover?t=oI7nVAef1DJkZVoF-1)
+- Design do projeto disponível no Figma: [Mars rover](https://www.figma.com/design/igyPaBXlsQqhxID62yC5Di/Mars-Rover?node-id=0-1&t=oI7nVAef1DJkZVoF-1)
 
 ### Tecnologias Utilizadas
 
