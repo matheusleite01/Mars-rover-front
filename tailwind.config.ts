@@ -17,7 +17,8 @@ const config: Config = {
       inputColor: "#27272A",
       inputBorder: "#6B7280",
       border: "#424246",
-      erroColor: "#FA5560"
+      erroColor: "#FA5560",
+      green: "#88C198"
     },
     backgroundImage: {
       "gradient-custom":
