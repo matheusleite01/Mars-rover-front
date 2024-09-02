@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mars Rover 
 
-## Getting Started
+### Sobre
 
-First, run the development server:
+A Mars Rover é uma aplicação desenvolvida para simular a movimentação de rovers em um platô de Marte. A aplicação permite configurar o tamanho do platô e enviar comandos para controlar os rovers, registrando suas posições iniciais, comandos recebidos e posições finais.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Funcionalidades Principais
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
+- **Configuração do Platô:** Permite definir as dimensões do platô onde os rovers irão se movimentar.
+- **Movimentação dos Rovers:** Recebe comandos para movimentar os rovers e calcula suas posições finais.
+- **Registro de Log:** Armazena a posição inicial, comandos e posição final dos rovers em um banco de dados MongoDB.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Design
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Design do projeto disponível no Figma: [Mars rover](https://www.figma.com/proto/igyPaBXlsQqhxID62yC5Di/Mars-Rover?t=oI7nVAef1DJkZVoF-1)
 
-## Learn More
+### Tecnologias Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- **React.js:** Biblioteca JavaScript para construção de interfaces de usuário.
+- **Next.js:** Framework React para desenvolvimento de aplicações web.
+- **Typescripr:** Superconjunto de JavaScript que adiciona tipagem estática ao código.
+- **Taiwind:** Framework CSS para estilização.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Como rodar na minha maquina
 
-## Deploy on Vercel
+- Clone o projeto `git clone https://github.com/matheusleite01/Mars-rover-back.git`
+- Rode `npm install`
+- Rode `npm run dev`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Deploy da aplicação:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Deploy da aplicação: `https://mars-rover-front-mu.vercel.app/`
+
+
+
+
+
+
+
+
