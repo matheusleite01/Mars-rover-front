@@ -1,11 +1,15 @@
+import { FinalPosition } from "@/types";
 import React from "react";
 
 type FinalPositionProps = {
-  valueRover1: string | null;
-  valueRover2: string | null;
+  valueRover1: FinalPosition | null;
+  valueRover2: FinalPosition | null;
 };
 
-const FinalPosition = ({ valueRover1, valueRover2 }: FinalPositionProps) => {
+const FinalPositionValue = ({
+  valueRover1,
+  valueRover2,
+}: FinalPositionProps) => {
   return (
     <div className="flex flex-col gap-3 text-center">
       <p className="font-Plus text-xs font-bold">Final Position</p>
@@ -14,8 +18,13 @@ const FinalPosition = ({ valueRover1, valueRover2 }: FinalPositionProps) => {
       >
         {valueRover1 && valueRover2 ? (
           <>
-            <p className="bg-gradient-custom rounded-lg px-2">{valueRover1.finalPosition}</p>-
-            <p className="bg-gradient-custom rounded-lg px-2">{valueRover2.finalPosition}</p>
+            <p className="bg-gradient-custom rounded-lg px-2">
+              {valueRover1.finalPosition}
+            </p>
+            -
+            <p className="bg-gradient-custom rounded-lg px-2">
+              {valueRover2.finalPosition}
+            </p>
           </>
         ) : (
           "- - -"
@@ -25,4 +34,4 @@ const FinalPosition = ({ valueRover1, valueRover2 }: FinalPositionProps) => {
   );
 };
 
-export default FinalPosition;
+export default FinalPositionValue;

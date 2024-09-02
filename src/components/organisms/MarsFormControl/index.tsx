@@ -1,6 +1,6 @@
 "use client";
 import Button from "@/components/atoms/Button";
-import FinalPosition from "@/components/atoms/FinalPosition";
+import FinalPosition from "@/components/atoms/FinalPositionValue";
 import FormInput from "@/components/atoms/FormInput";
 import RoverSection from "@/components/molecules/RoverSection/inde";
 import useMarsFormControl from "@/hooks/useMarsFormControl";

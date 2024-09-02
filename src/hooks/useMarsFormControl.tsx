@@ -7,10 +7,13 @@ import {
 } from "@/utils/schema/moverRoverShema";
 import api from "@/service/api";
 import { toast } from "sonner";
+import { FinalPosition } from "@/types";
 
 const useMarsFormControl = () => {
-  const [finalPositionRover1, setfinalPositionRover1] = useState(null);
-  const [finalPositionRover2, setfinalPositionRover2] = useState(null);
+  const [finalPositionRover1, setfinalPositionRover1] =
+    useState<FinalPosition | null>(null);
+  const [finalPositionRover2, setfinalPositionRover2] =
+    useState<FinalPosition | null>(null);
   const [loading, setLoading] = useState(false);
 
   const {

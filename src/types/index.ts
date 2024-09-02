@@ -11,3 +11,7 @@ export type Movement = {
   };
   updateAt: string;
 };
+
+export type FinalPosition = {
+  finalPosition: string;
+};
