@@ -1,10 +1,9 @@
 import FormInput from "@/components/atoms/FormInput";
-import React from "react";
 import { FieldErrors, FieldValues, UseFormRegister } from "react-hook-form";
 
 type RoverSectionProps = {
   label: string;
-  register: UseFormRegister<FieldValues>;
+  register: UseFormRegister<any>;
   roverCommand: {
     position: string;
     command: string;
@@ -24,15 +23,15 @@ const RoverSection = ({
       <div className="flex flex-col gap-4">
         <FormInput
           label="Initial Position"
-          placeholder="Label"
-          helpMessage="pede ded eeeee eeded edeadad"
+          placeholder="1 2 N"
+          helpMessage="Enter 'x y D' where D is N, S, E, or W (e.g., '1 2 N')"
           error={error}
           {...register(roverCommand.position)}
         />
         <FormInput
           label="Command"
-          placeholder="Label"
-          helpMessage="pede ded eeeee eeded edeadad"
+          placeholder="LMLMLMLMM"
+          helpMessage="Enter a sequence of L, R, and M (e.g., 'LMLMLMM')."
           error={error}
           {...register(roverCommand.command)}
         />

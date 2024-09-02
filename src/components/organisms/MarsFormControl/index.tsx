@@ -1,22 +1,23 @@
 "use client";
 import Button from "@/components/atoms/Button";
-import FinalPorition from "@/components/atoms/FinalPosition";
+import FinalPosition from "@/components/atoms/FinalPosition";
 import FormInput from "@/components/atoms/FormInput";
 import RoverSection from "@/components/molecules/RoverSection/inde";
 import useMarsFormControl from "@/hooks/useMarsFormControl";
 import { FaCircleMinus } from "react-icons/fa6";
-import { FaCirclePlus } from "react-icons/fa6";
+import { CgSpinner } from "react-icons/cg";
 
 const MarsFormControl = () => {
   const {
     handleSubmit,
     register,
-    newRoverSection,
     rover1,
     rover2,
-    setNewRoverSection,
     handleFormSubmit,
     errors,
+    finalPositionRover1,
+    finalPositionRover2,
+    loading,
   } = useMarsFormControl();
 
   return (
@@ -32,9 +33,8 @@ const MarsFormControl = () => {
           </span>
         </h3>
         <p className="text-xs text-gray leading-4 font-Plus">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s.
+          Control the Mars Rover by setting the plateau size, initial position,
+          and movement commands. Explore Mars with precise navigation!
         </p>
       </div>
 
@@ -43,7 +43,8 @@ const MarsFormControl = () => {
       <div className="flex flex-col gap-5">
         <FormInput
           label="Plateau Size"
-          helpMessage="pede ded eeeee eeded edeadad"
+          placeholder="1 2"
+          helpMessage="Enter two integers separated by space (e.g., '1 2')."
           error={errors}
           {...register("plateau")}
         />
@@ -54,33 +55,33 @@ const MarsFormControl = () => {
             error={errors}
             roverCommand={rover1}
           />
-          {newRoverSection ? (
-            <>
-              {" "}
-              <FaCircleMinus
-                className="cursor-pointer"
-                onClick={() => setNewRoverSection(false)}
-              />
-              <RoverSection
-                label="Rover 2"
-                register={register}
-                error={errors}
-                roverCommand={rover2}
-              />
-            </>
-          ) : (
-            <FaCirclePlus
-              className="cursor-pointer"
-              onClick={() => setNewRoverSection(true)}
+
+          <>
+            {" "}
+            <FaCircleMinus />
+            <RoverSection
+              label="Rover 2"
+              register={register}
+              error={errors}
+              roverCommand={rover2}
             />
-          )}
+          </>
         </div>
       </div>
 
-      <Button>Submit</Button>
+      <Button disabled={loading}>
+        {loading ? (
+          <CgSpinner className="animate-spin mx-auto" size={25} />
+        ) : (
+          "Submit"
+        )}
+      </Button>
 
       <div className="h-[0.5px] bg-border opacity-50"></div>
-      <FinalPorition value="- - -" />
+      <FinalPosition
+        valueRover1={finalPositionRover1}
+        valueRover2={finalPositionRover2}
+      />
     </form>
   );
 };

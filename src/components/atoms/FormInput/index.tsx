@@ -33,7 +33,7 @@ const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
             />
           )}
           {helpMessageState && (
-            <div className="absolute -top-12 right-20 max-w-52 bg-background border-[0.5px] border-border rounded-2xl p-2">
+            <div className="absolute -top-[75px] max-w-52 bg-background border-[0.5px] border-border rounded-2xl p-2">
               <p className="text-xs">{helpMessage}</p>
             </div>
           )}
@@ -56,5 +56,7 @@ const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
     );
   },
 );
+
+FormInput.displayName = "FormInput";
 
 export default FormInput;
