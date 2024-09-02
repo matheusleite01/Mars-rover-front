@@ -1,9 +1,12 @@
-import Image from "next/image";
+import Table from "@/components/molecules/Table";
+import MarsFormControl from "@/components/organisms/MarsFormControl";
+import TableHistory from "@/components/organisms/TableHistory";
+import MarsRoverTemplate from "@/components/templates/MarsRoverTemplate";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
+    <main>
+      <MarsRoverTemplate />
     </main>
   );
 }

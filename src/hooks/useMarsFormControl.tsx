@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import {
   moverRoverSchema,
   MoverRoverSchemaProps,
-} from "@/schema/moverRoverShema";
+} from "@/utils/schema/moverRoverShema";
 import api from "@/service/api";
 import { toast } from "sonner";
 
