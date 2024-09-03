@@ -28,6 +28,7 @@ const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
             <RiQuestionFill
               size={14}
               className="relative -top-2 cursor-pointer"
+              role="helpSvg"
               onMouseEnter={() => setHelpMessage(true)}
               onMouseLeave={() => setHelpMessage(false)}
             />

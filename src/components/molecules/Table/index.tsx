@@ -25,7 +25,7 @@ const Table = ({ headerTable, data, loading }: TableProps) => {
           {loading && (
             <tr>
               <td className="absolute top-[50%] right-[50%]">
-                <CgSpinner className="animate-spin text-center" size={40} />
+                <CgSpinner role="spinSvg" className="animate-spin text-center" size={40} />
               </td>
             </tr>
           )}

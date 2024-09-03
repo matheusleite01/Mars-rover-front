@@ -2,7 +2,7 @@
 import Button from "@/components/atoms/Button";
 import FinalPosition from "@/components/atoms/FinalPositionValue";
 import FormInput from "@/components/atoms/FormInput";
-import RoverSection from "@/components/molecules/RoverSection/inde";
+import RoverSection from "@/components/molecules/RoverSection/index";
 import useMarsFormControl from "@/hooks/useMarsFormControl";
 import { FaCircleMinus } from "react-icons/fa6";
 import { CgSpinner } from "react-icons/cg";
