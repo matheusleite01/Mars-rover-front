@@ -10,7 +10,7 @@ type TableProps = {
 };
 const Table = ({ headerTable, data, loading }: TableProps) => {
   return (
-    <div className=" w-full h-full relative overflow-x-auto border-[0.5px] border-border border-opacity-50 rounded-xl e">
+    <div className=" w-full h-full max-h-[44.313rem] relative overflow-x-auto border-[0.5px] border-border border-opacity-50 rounded-xl e">
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead className="font-Plus text-xs text-gray-700 border-b-[0.5px] border-border border-opacity-50">
           <tr>
